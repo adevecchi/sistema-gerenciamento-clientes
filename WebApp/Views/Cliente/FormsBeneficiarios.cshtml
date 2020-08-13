@@ -1,0 +1,46 @@
+﻿<div id="formBeneficiarios" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Beneficiários</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label for="CPF">CPF:</label>
+                            <input type="text" class="form-control" id="CPF" name="CPF" placeholder="Ex.: 010.011.111.00" required maxlength="14">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="Nome">Nome:</label>
+                            <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Ex.: João da Silva" required maxlength="50">
+                        </div>
+                        <div class="col-md-2">
+                            <label>&nbsp;</label>
+                            <button type="button" id="incluir" class="btn btn-success">Incluir</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>CPF</th>
+                                        <th>Nome</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div> <!-- /.modal -->

@@ -1,0 +1,18 @@
+﻿@model WebApp.Models.ClienteBeneficiariosModel
+@{
+    ViewBag.Title = "Alterar Cliente";
+}
+@section scripts{
+    <script>
+        var urlPost = '@Url.Action("Alterar", "Cliente", new { area = "" })';
+        var obj = @Html.Raw(Json.Encode(Model.Cliente));
+        var urlRetorno = '@Url.Action("Index", "Cliente", new { area = "" })';
+
+        var beneficiarios = @Html.Raw(Json.Encode(Model.Beneficiarios.ResultSet));
+    </script>
+    @Scripts.Render("~/bundles/mask")
+    @Scripts.Render("~/bundles/altClientes")
+}
+<h2>@Html.Raw(ViewBag.Title)</h2>
+@Html.Partial("Forms")
+@Html.Partial("FormsBeneficiarios")
